@@ -1,0 +1,18 @@
+What is Depends()?
+=> In FastAPI, a Dependency is simply a function (or callable) that FastAPI 
+    runs automatically before your endpoint executes, and whose return 
+    value it passes into your endpoint as a parameter.
+
+=> A dependency is a reusable piece of logic that FastAPI "injects" 
+    into your path operation function, using Depends().
+
+=> Depends() tells FastAPI:
+    "Before executing this endpoint, execute another function first."
+
+=> Execution Order:     
+    1. Request 
+    2. Dependency executes 
+    3. Return value 
+    4. Injected into route 
+    5. Route execute 
+    6. Response 
