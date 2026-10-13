@@ -1,0 +1,13 @@
+docker compose up --build 
+
+# Open bash in app container if needed 
+docker exec -it fastapi_con bash 
+
+# Start services 
+docker compose up 
+
+# Or, run in background 
+docker compose up -d 
+
+# stop when done 
+docker compose down 
